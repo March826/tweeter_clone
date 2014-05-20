@@ -1,0 +1,18 @@
+<%= content_for :header do %>
+	Tweeter
+<% end %>
+
+<h1>Editing User</h1>
+<%= form_for @user do |f| %>
+	<%= f.label :username %>
+	<%= f.text_field :username %>
+	<br />
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+	<br />
+	<%= f.submit 'Save' %>
+<% end %>
+
+<%= content_for :footer do %>
+	Java nice day
+<% end %>

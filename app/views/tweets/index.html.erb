@@ -1,0 +1,6 @@
+<h1>Tweets for <%= User.current_user %></h1>
+<% @tweets.each do |tweet| %>
+	<div class="well">
+		<p><%=tweet.content %></p>
+	</div>
+<%end%> <!-- place = sign only when you are displaying output -->

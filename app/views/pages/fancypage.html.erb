@@ -1,0 +1,10 @@
+<h1> This is a fancy page. </h1>
+<p> <%= @content %> </p>
+
+<%= content_for :header do %>
+	Tweeter is so fancy
+<% end %>
+
+<%= content_for :footer do %>
+	<p> <%= link_to 'Go to Twitter instead', 'http://www.twitter.com'%> </p>
+<% end %>

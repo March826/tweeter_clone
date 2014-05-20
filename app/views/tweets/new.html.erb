@@ -1,0 +1,6 @@
+<%= simple_form_for @tweet do |f|%>
+	<%= f.input :content, :as => :text %>
+	<%= f.input :posted_on %>
+	<%= f.input :user_id %>
+	<%=f.submit %>
+<%end%>
